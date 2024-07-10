@@ -6,13 +6,13 @@
     <title>MFS Calc</title>
 
     <style>
+        /* Your existing CSS styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: sans-serif
+            font-family: sans-serif;
         }
-
         body {
             display: flex;
             justify-content: center;
@@ -20,7 +20,6 @@
             min-height: 100vh;
             background: linear-gradient(90deg, #375f54, #724860);
         }
-
         .container {
             background: transparent;
             border-radius: 10px;
@@ -30,7 +29,6 @@
             width: 100%;
             text-align: center;
         }
-
         header {
             width: 100%;
             background: #375f54;
@@ -40,7 +38,6 @@
             top: 0;
             left: 0;
         }
-
         .nav-container {
             display: flex;
             justify-content: space-between;
@@ -49,18 +46,15 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-
         .logo {
             color: white;
             text-decoration: none;
             font-size: 24px;
         }
-
         .nav-links {
             display: flex;
             gap: 15px;
         }
-
         .nav-links a {
             color: white;
             text-decoration: none;
@@ -69,16 +63,13 @@
             border-radius: 5px;
             transition: background 0.3s;
         }
-
         .nav-links a:hover {
             background: rgba(255, 255, 255, 0.2);
         }
-
         .menu-icon {
             display: none;
             cursor: pointer;
         }
-
         .menu-icon div {
             width: 25px;
             height: 3px;
@@ -86,17 +77,14 @@
             margin: 5px;
             transition: all 0.3s;
         }
-
         .container {
             margin-top: 80px; /* To ensure it doesn't overlap with the fixed navbar */
         }
-
         .result {
             font-size: 24px;
             margin-bottom: 20px;
             color: #ffffff;
         }
-
         input[type="number"] {
             background: wheat;
             width: calc(100% - 20px);
@@ -106,7 +94,6 @@
             border-radius: 5px;
             font-size: 20px;
         }
-
         button {
             width: 100px;
             height: 48px;
@@ -117,104 +104,82 @@
             cursor: pointer;
             transition: background 0.3s;
         }
-
         button.Bkash {
             background-color: #f543e6;
             color: white;
         }
-
         button.Nagad {
             background-color: #ffab0f;
             color: #1a1f29;
         }
-
         button.Rocket {
             background-color: #d11aff;
             color: #fff;
         }
-
         button:hover {
             opacity: 0.8;
         }
-
         button#clearButton {
             background-color: red;
             color: #fff;
         }
-
         h1, h2, h4 {
-                color: white;
-            }
-
+            color: white;
+        }
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
             }
-
             h1, h2, h4 {
                 font-size: 18px;
                 text;
             }
-
             .result {
                 font-size: 20px;
             }
-
             button {
                 width: 90px;
                 height: 35px;
                 font-size: 12px;
             }
-
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                gap: 0;
-                background: #375f54;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .nav-links a {
-                padding: 15px;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            }
-
-            .nav-links.show {
-                display: flex;
-            }
-
-            .menu-icon {
-                display: block;
-            }
         }
-
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            gap: 0;
+            background: #375f54;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .nav-links a {
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .nav-links.show {
+            display: flex;
+        }
+        .menu-icon {
+            display: block;
+        }
         @media (max-width: 480px) {
             .container {
                 padding: 10px;
             }
-
-           h1, h2, h4 {
-
+            h1, h2, h4 {
                 font-size: 16px;
                 color: white;
             }
-
             .result {
                 font-size: 20px;
             }
-
             button {
                 width: 80px;
                 height: 30px;
                 font-size: 10px;
             }
-
             input[type="number"] {
                 padding: 6px;
                 font-size: 12px;
@@ -241,6 +206,9 @@
 </header>
 
 <div class="container">
+    <!-- Google AdSense Code -->
+
+
     <form id="mfsForm">
         <div class="result">
             <h1>Total cashout charge is: <span id="result">0</span> Tk</h1>
@@ -280,6 +248,19 @@
 
         <button type="button" id="clearButton">Clear Result</button>
     </form>
+
+    <div style="text-align: center; margin-bottom: 20px;">
+
+      <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-9609837090057433"
+      data-ad-slot="3205777794"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+      </ins> 
+
+    </div>
+
 </div>
 
 <script>
@@ -305,6 +286,9 @@
             resultSpan.textContent = '0';
             document.getElementById('number1').value = '';
         });
+
+        // Load Google AdSense script
+        (adsbygoogle = window.adsbygoogle || []).push({});
     });
 
     function toggleMenu() {
@@ -312,6 +296,13 @@
         navLinks.classList.toggle('show');
     }
 </script>
+
+<!-- Google AdSense script -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9609837090057433"
+     crossorigin="anonymous"></script>
+<script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+ </script>
 
 </body>
 </html>
